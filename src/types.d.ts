@@ -136,6 +136,14 @@ export interface Item {
   image?: Image;
 }
 
+export interface ProductItem {
+  catalog?: string;
+  title?: string;
+  description?: string;
+  image?: string;
+  links?: string;
+}
+
 export interface Price {
   title?: string;
   subtitle?: string;
@@ -280,3 +288,10 @@ export interface Content extends Headline, Widget {
 }
 
 export interface Contact extends Headline, Form, Widget {}
+
+export interface ProductsList {
+  title: 'string';
+  subtitle: string;
+  id?: 'string',
+  items: Array<ProductItem>;
+}

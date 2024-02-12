@@ -1,8 +1,12 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
-  content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}', './node_modules/flowbite/**/*.js'],
+  content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   theme: {
+    screens: {
+      'xs': '480px',
+      ...defaultTheme.screens
+    },
     extend: {
       colors: {
         primary: 'var(--aw-color-primary)',
@@ -16,12 +20,8 @@ module.exports = {
         serif: ['var(--aw-font-serif)', ...defaultTheme.fontFamily.serif],
         heading: ['var(--aw-font-heading)', ...defaultTheme.fontFamily.sans],
       },
-      height: {
-        '100': '40rem',
-        '112': '48rem'
-      }
     },
   },
-  plugins: [require('@tailwindcss/typography'), require('flowbite/plugin')],
+  plugins: [require('@tailwindcss/typography')],
   darkMode: 'class',
 };

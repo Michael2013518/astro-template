@@ -3,19 +3,13 @@ import Layout from '~/layouts/PageLayout.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Note from '~/components/widgets/Note.astro';
 import Features from '~/components/widgets/Features.astro';
-import Features2 from '~/components/widgets/Features2.astro';
-import Steps from '~/components/widgets/Steps.astro';
-import Content from '~/components/widgets/Content.astro';
-import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
-import FAQs from '~/components/widgets/FAQs.astro';
-import Stats from '~/components/widgets/Stats.astro';
-import CallToAction from '~/components/widgets/CallToAction.astro';
+import Proucts from '~/components/widgets/Products.astro'
+import Catalog from '~/components/widgets/Catalog.astro'
 
 const metadata = {
-  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+  title: 'UOMAZ — Connecting Your Business to Endless Possibilities: Your Premier Partner for China Sourcing Success',
   ignoreTitleTemplate: true,
 };
-
 ---
 
 <Layout metadata={metadata}>
@@ -25,848 +19,127 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
-        target: '_blank',
-        icon: 'tabler:download',
+        text: 'View Products',
+        href: '/products',
+        icon: 'tabler:arrow-narrow-right',
       },
-      { text: 'Learn more', href: '#features' },
+      { text: 'Contact us', href: '/contact' },
     ]}
   >
     <Fragment slot="title">
-      Free template for <span class="hidden xl:inline">creating websites with</span>
-      <span class="text-accent dark:text-white highlight"> Astro 4.0</span> + Tailwind CSS
+      Your Trusted Source <span class="hidden xl:inline">for reilable</span>
+      <span class="md:text-white dark:text-white highlight sm:text-black">HVAC Spare Parts</span> !
     </Fragment>
 
     <Fragment slot="subtitle">
-      <span class="hidden sm:inline">
-        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 4.0
-        + Tailwind CSS.</span
-      >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span>
-      Suitable for Startups, Small Business, SaaS websites, Professional Portfolios, Marketing websites, Landing Pages &
-      Blogs.
+      Trusted Sourcing Agent for all your ventilation spare parts (grill, duct, trunking, bracket) LED lightings (down light, strip light, work light, panel light) building materials (glass, marble, door, window, shower box) needs
     </Fragment>
   </Hero>
-  <!-- MainContent Widget -->
-  <section class="text-gray-600 body-font">
-    <div class="container px-5 py-24 mx-auto">
-      <div class="flex flex-wrap -m-4">
-        <div class="p-4 md:w-1/3">
-          <div
-            class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden transform duration-300 hover:shadow-xl cursor-pointe hover:-translate-y-1 group"
-          >
-            <img
-              class="lg:h-48 md:h-36 w-full object-cover object-center transform duration-300 group-hover:scale-110"
-              src="https://images.unsplash.com/photo-1682688759157-57988e10ffa8?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="blog"
-            />
-            <div class="p-6">
-              <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The Catalyzer</h1>
-              <p class="leading-relaxed mb-3">
-                Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.
-              </p>
-              <div class="flex items-center flex-wrap">
-                <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"
-                  >Learn More
-                  <svg
-                    class="w-4 h-4 ml-2"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path d="M5 12h14"></path>
-                    <path d="M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
-                <span
-                  class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200"
-                >
-                  <svg
-                    class="w-4 h-4 mr-1"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                    <circle cx="12" cy="12" r="3"></circle>
-                  </svg>1.2K
-                </span>
-                <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                  <svg
-                    class="w-4 h-4 mr-1"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"
-                    ></path>
-                  </svg>6
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="p-4 md:w-1/3">
-          <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-            <img
-              class="lg:h-48 md:h-36 w-full object-cover object-center"
-              src="https://images.unsplash.com/photo-1682685797208-c741d58c2eff?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="blog"
-            />
-            <div class="p-6">
-              <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The 400 Blows</h1>
-              <p class="leading-relaxed mb-3">
-                Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.
-              </p>
-              <div class="flex items-center flex-wrap">
-                <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"
-                  >Learn More
-                  <svg
-                    class="w-4 h-4 ml-2"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path d="M5 12h14"></path>
-                    <path d="M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
-                <span
-                  class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200"
-                >
-                  <svg
-                    class="w-4 h-4 mr-1"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                    <circle cx="12" cy="12" r="3"></circle>
-                  </svg>1.2K
-                </span>
-                <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                  <svg
-                    class="w-4 h-4 mr-1"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"
-                    ></path>
-                  </svg>6
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="p-4 md:w-1/3">
-          <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-            <img
-              class="lg:h-48 md:h-36 w-full object-cover object-center"
-              src="https://images.unsplash.com/photo-1682686580224-cd46ea1a6950?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="blog"
-            />
-            <div class="p-6">
-              <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Shooting Stars</h1>
-              <p class="leading-relaxed mb-3">
-                Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.
-              </p>
-              <div class="flex items-center flex-wrap">
-                <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"
-                  >Learn More
-                  <svg
-                    class="w-4 h-4 ml-2"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path d="M5 12h14"></path>
-                    <path d="M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
-                <span
-                  class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200"
-                >
-                  <svg
-                    class="w-4 h-4 mr-1"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                    <circle cx="12" cy="12" r="3"></circle>
-                  </svg>1.2K
-                </span>
-                <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                  <svg
-                    class="w-4 h-4 mr-1"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"
-                    ></path>
-                  </svg>6
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Product Catalog -->
-  <section class="text-gray-600 body-font">
-    <div class="container px-5 py-24 mx-auto flex flex-wrap">
-      <div class="flex w-full mb-20 flex-wrap">
-        <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 lg:w-1/3 lg:mb-0 mb-4">
-          Master Cleanse Reliac Heirloom
-        </h1>
-        <p class="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">
-          Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table.
-          Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom.
-        </p>
-      </div>
-      <div class="flex flex-wrap md:-m-2 -m-1">
-        <div class="flex flex-wrap w-1/2">
-          <div class="md:p-2 p-1 w-1/2 group">
-            <img
-              alt="gallery"
-              class="w-full object-cover h-full object-center block transform duration-300 group-hover:scale-105"
-              src="https://images.unsplash.com/photo-1534177616072-ef7dc120449d?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            />
-          </div>
-          <div class="md:p-2 p-1 w-1/2 group">
-            <img
-              alt="gallery"
-              class="w-full object-cover h-full object-center block transform duration-300 group-hover:scale-105"
-              src="https://images.unsplash.com/photo-1505405241694-58823de133e1?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            />
-          </div>
-          <div class="md:p-2 p-1 w-full group">
-            <img
-              alt="gallery"
-              class="w-full h-full object-cover object-center block transform duration-300 group-hover:scale-105"
-              src="https://plus.unsplash.com/premium_photo-1682721998397-3fc75b63c82f?q=80&w=3871&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            />
-          </div>
-        </div>
-        <div class="flex flex-wrap w-1/2">
-          <div class="md:p-2 p-1 w-full group">
-            <img
-              alt="gallery"
-              class="w-full h-full object-cover object-center block transform duration-300 group-hover:scale-105"
-              src="https://images.unsplash.com/photo-1545164415-0fae860defbd?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            />
-          </div>
-          <div class="md:p-2 p-1 w-1/2 group">
-            <img
-              alt="gallery"
-              class="w-full object-cover h-full object-center block transform duration-300 group-hover:scale-105"
-              src="https://images.unsplash.com/photo-1592298178573-2f46960268c6?q=80&w=3953&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            />
-          </div>
-          <div class="md:p-2 p-1 w-1/2 group">
-            <img
-              alt="gallery"
-              class="w-full object-cover h-full object-center block transform duration-300 group-hover:scale-105"
-              src="https://images.unsplash.com/photo-1490351267196-b7a67e26e41b?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Home Slide -->
-  <div id="carousel-example" class="relative w-full">
-    <!-- Carousel wrapper -->
-    <div
-        class="relative h-screen overflow-hidden sm:h-64 xl:h-80 2xl:h-100"
-    >
-        <!-- Item 1 -->
-        <div id="carousel-item-1" class="hidden duration-700 ease-in-out">
-            <img
-                src="https://images.unsplash.com/photo-1682695794816-7b9da18ed470?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
-                alt="..."
-            />
-        </div>
-        <!-- Item 2 -->
-        <div id="carousel-item-2" class="hidden duration-700 ease-in-out">
-            <img
-                src="https://images.unsplash.com/photo-1682687219800-bba120d709c5?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
-                alt="..."
-            />
-        </div>
-        <!-- Item 3 -->
-        <div id="carousel-item-3" class="hidden duration-700 ease-in-out">
-            <img
-                src="https://images.unsplash.com/photo-1706806593440-53c9dab6d39f?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
-                alt="..."
-            />
-        </div>
-        <!-- Item 4 -->
-        <div id="carousel-item-4" class="hidden duration-700 ease-in-out">
-            <img
-                src="https://images.unsplash.com/photo-1682685796775-020fd5dcd7d1?q=80&w=3871&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
-                alt="..."
-            />
-        </div>
-    </div>
-    <!-- Slider indicators -->
-    <div
-        class="absolute bottom-5 left-1/2 z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse"
-    >
-        <button
-            id="carousel-indicator-1"
-            type="button"
-            class="h-3 w-3 rounded-full"
-            aria-current="true"
-            aria-label="Slide 1"
-        ></button>
-        <button
-            id="carousel-indicator-2"
-            type="button"
-            class="h-3 w-3 rounded-full"
-            aria-current="false"
-            aria-label="Slide 2"
-        ></button>
-        <button
-            id="carousel-indicator-3"
-            type="button"
-            class="h-3 w-3 rounded-full"
-            aria-current="false"
-            aria-label="Slide 3"
-        ></button>
-        <button
-            id="carousel-indicator-4"
-            type="button"
-            class="h-3 w-3 rounded-full"
-            aria-current="false"
-            aria-label="Slide 4"
-        ></button>
-    </div>
-    <!-- Slider controls -->
-    <button
-        id="data-carousel-prev"
-        type="button"
-        class="group absolute left-0 top-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none"
-    >
-        <span
-            class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white dark:bg-gray-800/30 dark:group-hover:bg-gray-800/60 dark:group-focus:ring-gray-800/70"
-        >
-            <svg
-                class="h-4 w-4 text-white dark:text-gray-800"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 6 10"
-            >
-                <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 1 1 5l4 4"
-                />
-            </svg>
-            <span class="hidden">Previous</span>
-        </span>
-    </button>
-    <button
-        id="data-carousel-next"
-        type="button"
-        class="group absolute right-0 top-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none"
-    >
-        <span
-            class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white dark:bg-gray-800/30 dark:group-hover:bg-gray-800/60 dark:group-focus:ring-gray-800/70"
-        >
-            <svg
-                class="h-4 w-4 text-white dark:text-gray-800"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 6 10"
-            >
-                <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="m1 9 4-4-4-4"
-                />
-            </svg>
-            <span class="hidden">Next</span>
-        </span>
-    </button>
-</div>
   <!-- Note Widget ******************* -->
 
   <Note />
+  <!-- MainContent Widget -->
+  <Proucts 
+  title="Feature Products" 
+  subtitle="Your One-Stop Source for Quality, Performance, and Savings" 
+  items={
+    [
+        {
+          catalog: 'Bracket',
+          title: 'Air Diffuser and Grille',
+          description: 'Your source for efficient Ventilation Air Valves. Enhance indoor air quality effortlessly. Breathe fresh.',
+          image: '/images/uomaz/1-1-Air-Valves.jpg',
+          links: '/products#bracket'
+        },
+        {
+          catalog: 'Condenser Support',
+          title: 'Flexible Ductwork',
+          description: 'Flexible ductwork is a versatile and convenient solution for HVAC systems. ',
+          image: '/images/uomaz/2.jpeg',
+          links: '/products#condenser'
+        },
+        {
+          catalog: 'Diffuser & Grill',
+          title: 'Spiral Duct and Fitting, Damper, Access Door',
+          description: 'Discover the excellence of Airandus\' Spiral Duct and Fittings. ',
+          image: '/images/uomaz/3-1-Spiral-Duct-and-Fitting3.jpg',
+          links: '/products#grill'
+        },
+        {
+          catalog: 'Flexible Duct',
+          title: 'Ductwork Components and Accessories',
+          description: 'Ductwork Hangers and Supports are essential components used in the installation of duct systems.',
+          image: '/images/uomaz/4-1-Ductwork-Hangers2.jpg',
+          links: '/products#duct'
+        },
+        {
+          catalog: 'Tape',
+          title: 'Adhesive Tapes, Thermal Insulation Material, Sealant',
+          description: 'Our high-quality Adhesive Tapes are essential for HVAC applications, providing reliable sealing, joining, and insulation. ',
+          image: '/images/uomaz/5-1-Adhesive-Tapes.jpg',
+          links: '/products#tapes'
+        },
+        {
+          catalog: 'Bracket',
+          title: 'Ventilation Fans',
+          description: 'Ventilation fans are essential components of HVAC systems, designed to improve indoor air quality and promote air circulation.',
+          image: '/images/uomaz/Inline-duct-fans5.jpg',
+          links: '/products#bracket'
+        }
+      ]
+  } />
+
+  <!-- Product Catalog -->
+  <Catalog />
 
   <!-- Features Widget *************** -->
 
   <Features
     id="features"
-    tagline="Features"
-    title="What you get with AstroWind"
-    subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022."
+    title="What you get with service"
+    subtitle="Your Trusted HVAC Supplier for Quality and Innovation."
     items={[
       {
-        title: 'Astro + Tailwind CSS Integration',
+        title: 'Warehousing Storage',
         description:
-          'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
+          'Our warehouse services provide storage space for your products in China and New Zealand. This means that you can order your products in bulk and store them in China warehouse, saving you shipping costs and time.',
         icon: 'tabler:brand-tailwind',
       },
       {
-        title: 'Ready-to-use Components',
+        title: 'Warehousing Consolidation',
         description:
-          'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
+          'You order multiple products from different suppliers in China. Our warehouse service can consolidate your products to ship them all at once, which is more cost-effective than shipping them separately.',
         icon: 'tabler:components',
       },
       {
-        title: 'Best Practices',
+        title: 'Quality checking',
         description:
-          'Creating secure, efficient, and user-friendly websites that deliver exceptional experiences and lasting value.',
+          'As an international sourcing agent, we understand the importance of quality control when it comes to product sourcing. We offer a comprehensive quality check service as part of our sourcing process.',
         icon: 'tabler:list-check',
       },
       {
-        title: 'Excellent Page Speed',
+        title: 'Factory Audit',
         description:
-          'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
+          'Factory audit is a service that is designed to assess a factory is quality standards, production processes, and overall compliance with industry regulations. Through this service, auditors can evaluate a factory is facilities.',
         icon: 'tabler:rocket',
       },
       {
-        title: 'Search Engine Optimization (SEO)',
+        title: 'Logistic',
         description:
-          "SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
+          "Uomaz start from the shipping of the goods from the different manufacturers to the loading of the goods into the container for shipment. We also manage the customs clearance process, ensuring that the products comply with all the necessary laws and regulations. ",
         icon: 'tabler:arrows-right-left',
       },
       {
-        title: 'Open to new ideas and contributions',
+        title: 'Manufacture sourcing',
         description:
-          'Embracing a culture that is open to new ideas and contributions is integral fostering innovation, collaboration, and a dynamic user experience.',
+          'Manufacture sourcing is a crucial aspect of manufacturing operations that involves identifying and selecting the best possible suppliers for the production of goods. This process involves various steps including assessing supplier capabilities, evaluating product quality.',
         icon: 'tabler:bulb',
       },
     ]}
-  />
-
-  <!-- Content Widget **************** -->
-
-  <Content
-    isReversed
-    tagline="Inside template"
-    title="AstroWind's Blueprint: Fun Meets Functionality!"
-    items={[
-      {
-        title: 'Built on top of Astro 4.0',
-        description:
-          'Benefiting from the performance and developer-friendly features of this modern static site generator.',
-      },
-      {
-        title: 'Styled using Tailwind CSS',
-        description:
-          'Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework.',
-      },
-      {
-        title: 'Cross-browser compatibility',
-        description:
-          'Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Colorful Image',
-    }}
   >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Building on modern foundations</h3>
-      Gain a competitive advantage by incorporating industry leading practices
-    </Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
-  <!-- Content Widget **************** -->
-
-  <Content
-    isAfterContent
-    items={[
-      {
-        title: 'High level of customization',
-        description: `Tailor the template effortlessly to match your brand's identity and requirements, making your website distinct and saving you time.`,
-      },
-      {
-        title: 'Multiple layout possibilities',
-        description:
-          'Explore various layout options to find the structure that best presents your content, enhancing user engagement and navigation.',
-      },
-      {
-        title: 'Fully responsive design',
-        description:
-          "Ensure your website's optimal performance on various devices and screen sizes, providing a consistent and enjoyable user experience.",
-      },
-      {
-        title: 'Integration of media',
-        description:
-          'Seamlessly incorporate images, videos, and multimedia elements that enhance your content and engage visitors effectively.',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2194&q=80',
-      alt: 'Blueprint Image',
-    }}
-  >
-    <Fragment slot="content">Ensure your online presence truly represents you.</Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
-  <!-- Content Widget **************** -->
-
-  <Content
-    isReversed
-    isAfterContent
-    items={[
-      {
-        title: 'Enhanced user engagement',
-        description:
-          'Captivate your audience with interactive elements, intuitive navigation, and visually appealing layouts, encouraging longer visits.',
-      },
-      {
-        title: 'Continuous improvement',
-        description:
-          'Ensure your website stays aligned with the latest trends and technologies through regular updates and enhancements.',
-      },
-      {
-        title: 'Time and resource efficiency',
-        description:
-          'Skip the time-consuming process of building a website from scratch and launch your online presence sooner with AstroWind.',
-      },
-      {
-        title: 'Community support',
-        description: `Join the growing AstroWind community for insights, resources, and assistance, ensuring you're never alone on your web development journey.`,
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1611462985358-60d3498e0364?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Astronauts Image',
-    }}
-  >
-    <Fragment slot="content">Designed to foster growth and success.</Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
-  <!-- Steps Widget ****************** -->
-
-  <Steps
-    title="Get your dream website up and running in no time with AstroWind."
-    items={[
-      {
-        title: 'Step 1: <span class="font-medium">Download</span>',
-        description:
-          "Kickstart with GitHub! Either fork the AstroWind template or simply click 'Use this template'. Your canvas awaits, ready for your digital masterpiece. In just a few clicks, you've already set the foundation.",
-        icon: 'tabler:package',
-      },
-      {
-        title: 'Step 2: <span class="font-medium">Add content</em>',
-        description:
-          "Pour your vision into it. Add images, text, and all that jazz to breathe life into your digital space. Remember, it's the content that tells your story, so make it captivating.",
-        icon: 'tabler:letter-case',
-      },
-      {
-        title: 'Step 3: <span class="font-medium">Customize styles</span>',
-        description:
-          'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.',
-        icon: 'tabler:paint',
-      },
-      {
-        title: 'Ready!',
-        icon: 'tabler:check',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
-      alt: 'Steps image',
-    }}
-  />
-
-  <!-- Features2 Widget ************** -->
-
-  <Features2
-    title="Most used widgets"
-    subtitle="Provides frequently used components for building websites using Tailwind CSS"
-    tagline="Components"
-    items={[
-      {
-        title: 'Headers',
-        description: "Ever tried driving without GPS? Boom! That's why websites need headers for direction.",
-        icon: 'flat-color-icons:template',
-      },
-      {
-        title: 'Heros',
-        description:
-          "Picture a superhero landing – epic, right? That's the job of a Hero section, making grand entrances!",
-        icon: 'flat-color-icons:gallery',
-      },
-      {
-        title: 'Features',
-        description:
-          'Where websites strut their stuff and show off superpowers. No holding back on the bragging rights here!',
-        icon: 'flat-color-icons:approval',
-      },
-      {
-        title: 'Content',
-        description:
-          "Dive into the meat and potatoes of a site; without it, you'd just be window shopping. Content is king.",
-        icon: 'flat-color-icons:document',
-      },
-      {
-        title: 'Call-to-Action',
-        description:
-          'That enthusiastic friend who\'s always urging, "Do it! Do it!"? Yeah, that\'s this button nudging you towards adventure.',
-        icon: 'flat-color-icons:advertising',
-      },
-      {
-        title: 'Pricing',
-        description: 'Behold the dessert menu of the website world. Tempting choices await, can you resist?',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-      {
-        title: 'Testimonial',
-        description: 'Step into the gossip corner! Here, other visitors spill the beans and share the juicy details.',
-        icon: 'flat-color-icons:voice-presentation',
-      },
-      {
-        title: 'Contact',
-        description:
-          'Like a digital mailbox, but faster! Drop a line, ask a question, or send a virtual high-five. Ding! Message in.',
-        icon: 'flat-color-icons:business-contact',
-      },
-      {
-        title: 'Footers',
-        description: "The footer's like the credits of a movie but sprinkled with easter eggs. Time to hunt!",
-        icon: 'flat-color-icons:database',
-      },
-    ]}
-  >
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Features2>
-
-  <!-- HighlightedPosts Widget ******* -->
-
-  <BlogLatestPosts
-    title="Find out more content in our Blog"
-    information={`The blog is used to display AstroWind documentation.
-                        Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
-                        Astro is a very interesting technology. Thanks.
-                `}
-  />
-
-  <!-- FAQs Widget ******************* -->
-
-  <FAQs
-    title="Frequently Asked Questions"
-    subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
-    tagline="FAQs"
-    classes={{ container: 'max-w-6xl' }}
-    items={[
-      {
-        title: 'Why AstroWind?',
-        description:
-          "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
-      },
-      {
-        title: 'What do I need to start?',
-        description:
-          'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
-      },
-      {
-        title: 'How to install the Astro + Tailwind CSS template?',
-        description:
-          "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.",
-      },
-      {
-        title: "What's something that you don't understand?",
-        description:
-          "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
-      },
-      {
-        title: 'What is something that you would like to try again?',
-        description:
-          "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
-      },
-      {
-        title: 'If you could only ask one question to each person you meet, what would that question be?',
-        description:
-          "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
-      },
-    ]}
-  />
-
-  <!-- Stats Widget ****************** -->
-
-  <Stats
-    stats={[
-      { title: 'Downloads', amount: '132K' },
-      { title: 'Stars', amount: '24.8K' },
-      { title: 'Forks', amount: '10.3K' },
-      { title: 'Users', amount: '48.4K' },
-    ]}
-  />
-
-  <!-- CallToAction Widget *********** -->
-
-  <CallToAction
-    actions={[
-      {
-        variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
-        target: '_blank',
-        icon: 'tabler:download',
-      },
-    ]}
-  >
-    <Fragment slot="title">
-      Astro&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
-    </Fragment>
-
-    <Fragment slot="subtitle">
-      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-      waste more time! :P
-    </Fragment>
-  </CallToAction>
+  <Fragment slot="bg">
+    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+  </Fragment>
+</Features>
 </Layout>
-<script>
-  import { Carousel } from 'flowbite';
- const carouselElement = document.getElementById('carousel-example');
-
-const items = [
-    {
-        position: 0,
-        el: document.getElementById('carousel-item-1'),
-    },
-    {
-        position: 1,
-        el: document.getElementById('carousel-item-2'),
-    },
-    {
-        position: 2,
-        el: document.getElementById('carousel-item-3'),
-    },
-    {
-        position: 3,
-        el: document.getElementById('carousel-item-4'),
-    },
-];
-
-// options with default values
-const options = {
-    defaultPosition: 1,
-    interval: 3000,
-
-    indicators: {
-        activeClasses: 'bg-white dark:bg-gray-800',
-        inactiveClasses:
-            'bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800',
-        items: [
-            {
-                position: 0,
-                el: document.getElementById('carousel-indicator-1'),
-            },
-            {
-                position: 1,
-                el: document.getElementById('carousel-indicator-2'),
-            },
-            {
-                position: 2,
-                el: document.getElementById('carousel-indicator-3'),
-            },
-            {
-                position: 3,
-                el: document.getElementById('carousel-indicator-4'),
-            },
-        ],
-    },
-
-    // callback functions
-    onNext: () => {
-        console.log('next slider item is shown');
-    },
-    onPrev: () => {
-        console.log('previous slider item is shown');
-    },
-    onChange: () => {
-        console.log('new slider item has been shown');
-    },
-};
-
-// instance options object
-const instanceOptions = {
-  id: 'carousel-example',
-  override: true
-};
-
-
-const carousel = new Carousel(carouselElement, items, options, instanceOptions);
-carousel.cycle();
-const $prevButton = document.getElementById('data-carousel-prev');
-const $nextButton = document.getElementById('data-carousel-next');
-
-$prevButton.addEventListener('click', () => {
-    carousel.prev();
-});
-
-$nextButton.addEventListener('click', () => {
-    carousel.next();
-});
-</script>

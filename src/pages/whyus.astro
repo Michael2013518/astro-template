@@ -1,0 +1,113 @@
+---
+import Features2 from '~/components/widgets/Features2.astro';
+import Hero from '~/components/widgets/Hero2.astro';
+import Layout from '~/layouts/PageLayout.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+
+const metadata = {
+  title: 'Services',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="Whyus"
+    title="Elevate your projects with our stunning service"
+    subtitle="Explore our meticulously crafted serevice tailored to various industries and purposes. From captivating presentations to functional business, we offer the tools you need to succeed."
+    image={{
+      src: '/images/1179825208.jpeg',
+      alt: 'UOMAZ factory',
+    }}
+  />
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Explore our Professional service"
+    subtitle="Discover our selection below to streamline and elevate your projects."
+    columns={3}
+    items={[
+      {
+        title: 'Local Market Knowledge',
+        description:
+          'A Chinese sourcing agent will have comprehensive knowledge of the Chinese market and can help you navigate it effortlessly. You can rely on them to understand the various markets, industries, suppliers, and pricing structures within China.',
+        icon: 'tabler:school',
+      },
+      {
+        title: 'Reduced Costs',
+        description:
+          'Sourcing agents in China can help reduce your overall sourcing costs by leveraging their knowledge of the local market is pricing, cultural norms, and business practices. They can help you negotiate better prices with suppliers, secure discounts, and avoid hidden costs.',
+        icon: 'tabler:home-star',
+      },
+      {
+        title: 'Quality Control',
+        description: `With the language barrier and distance, it can be challenging to ensure the quality of the goods being sourced. Chinese agents have a better understanding of the market's quality standards and can ensure that the products you receive meet your specifications.`,
+        icon: 'tabler:photo',
+      },
+      {
+        title: 'Time-Saving',
+        description:
+          'By working with a sourcing agent in China, you can save valuable time that would otherwise have been spent trying to understand the Chinese market and locating suppliers. A local sourcing agent has pre-existing relationships with numerous suppliers, which can save you many hours of research.',
+        icon: 'tabler:shopping-cart',
+      },
+      {
+        title: 'Faster Product Turnaround',
+        description:
+          'A Chinese sourcing agent will have faster access and better communication with suppliers. This can improve the speed of delivery, saving valuable time during the manufacturing process.',
+        icon: 'tabler:article',
+      },
+      {
+        title: 'Transparency',
+        description:
+          'With a sourcing agent, you have direct contact with the manufacturer and can communicate your needs and concerns directly, which helps you to have clarity over the procurement process.',
+        icon: 'tabler:building-store',
+      },
+      {
+        title: 'Risk Management',
+        description:
+          'China is home to a large number of manufacturers, making it challenging to determine the legitimacy of suppliers. Partnering with a sourcing agent in China can reduce the risks associated with working with new suppliers, saving you from making costly mistakes.',
+        icon: 'tabler:arrow-big-up-lines',
+      },
+      {
+        title: 'Cultural Understanding',
+        description: `Sourcing agents in China can help bridge the cultural gap and avoid any misunderstandings that could lead to mistakes, delays, or even miscommunication between clients and suppliers. They understand the local language and business culture, ensuring that all steps in the sourcing process go smoothly and without cultural conflicts.`,
+        icon: 'tabler:vaccine',
+      },
+      {
+        title: 'Professional Service',
+        description:
+          'With attention to detail, customization, and contemporary design, they empower designers to showcase ideas cohesively. Ideal for all levels of designers.',
+        icon: 'tabler:tie',
+      },
+    ]}
+  />
+
+    <!-- Steps2 Widget ****************** -->
+
+    <Steps2
+    title="Reach out to us"
+    subtitle="Have questions? Feel free to contact us using the form below. We're here to help!"
+    callToAction={{
+      text: 'Contact us',
+      href: '/contact',
+    }}
+    items={[
+      {
+        title: 'Email us',
+        description: 'sales@uomaz.nz',
+        icon: 'tabler:mail',
+      },
+      {
+        title: 'Call us',
+        description: '+64 02108967978',
+        icon: 'tabler:headset',
+      },
+      {
+        title: 'Follow us',
+        description: '@uomaz',
+        icon: 'tabler:brand-x',
+      },
+    ]}
+  /></Layout>
