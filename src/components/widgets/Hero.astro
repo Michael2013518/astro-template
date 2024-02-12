@@ -23,8 +23,8 @@ const {
   image = await Astro.slots.render('image'),
 } = Astro.props;
 ---
-<!-- bg-[url('/images/1179825208.jpeg')] backdrop-blur-md -->
-<section class="relative bg-orange-600 md:bg-white md:-mt-[76px] md:bg-[url('/images/85001707637318_.pic.jpg')] md:bg-[center_top_4rem] md:bg-no-repeat  not-prose" {...id ? { id } : {}}>
+<!-- bg-[url('/images/1179825208.jpeg')] backdrop-blur-md bg-orange-600 md:bg-white-->
+<section class="relative md:-mt-[76px] md:bg-[url('/images/85001707637318_.pic.jpg')] md:bg-[center_top_4rem] md:bg-no-repeat  not-prose" {...id ? { id } : {}}>
   <div class="absolute inset-0 pointer-events-none" aria-hidden="true"></div>
   <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
     <div class="pt-0 md:pt-[76px] pointer-events-none"></div>
